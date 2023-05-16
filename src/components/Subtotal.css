@@ -1,0 +1,36 @@
+.subtotal {
+  background-color: #dee2e6;
+  border: 2px solid #dee2e6;
+  padding: 10px 20px;
+}
+.subtotal p {
+  font-weight: 600;
+  font-size: 16px;
+}
+.subtotal .proceed-btn {
+  color: black;
+  background-color: #febd69;
+  border: #febd69;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 4px 10px;
+  font-size: 17px;
+  width: 100%;
+  margin-top: 11px;
+}
+.subtotal .check-cart {
+  margin-right: 8px;
+}
+@media (max-width: 768px) {
+  .subtotal .parent-proceed-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .subtotal .proceed-btn {
+    margin: 12px 0 0;
+    font-size: 14px;
+    font-weight: 700;
+    width: 159px;
+  }
+}

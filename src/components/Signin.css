@@ -1,0 +1,72 @@
+.sign-in .logo {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in .logo .logo-img {
+  width: 150px;
+  padding: 15px 0;
+}
+.sign-in form {
+  width: 28%;
+  margin: auto;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  padding: 27px 19px;
+}
+/* medium screen */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .sign-in form {
+    width: 50%;
+  }
+}
+/* sm-xs screens */
+@media (max-width: 768px) {
+  .sign-in form {
+    width: 80%;
+  }
+}
+.sign-in form h2 {
+  margin-bottom: 22px;
+}
+.sign-in form .form-label {
+  font-weight: 700;
+  font-size: 16px;
+}
+.sign-in form input:focus {
+  box-shadow: none;
+  border-color: #febd69;
+}
+.sign-in form .btn-signin {
+  width: 100%;
+  margin-top: 16px;
+  background-color: #febd69;
+  color: black;
+  border-color: #febd69;
+  font-size: 20px;
+  font-weight: 500;
+}
+.sign-in form .btn-signin:active {
+  border-color: #febd69;
+  background-color: #febd69;
+  color: black;
+}
+.sign-in form .btn-createaccount {
+  width: 100%;
+  margin-top: 16px;
+  background-color: #ced4da;
+  color: black;
+  border-color: #ced4da;
+  font-size: 16px;
+  font-weight: 400;
+}
+.sign-in form .btn-createaccount:active {
+  background-color: #ced4da;
+  color: black;
+  border-color: #ced4da;
+}
+.sign-in form p {
+  font-size: 14px;
+  margin-top: 16px;
+  font-weight: 500;
+}

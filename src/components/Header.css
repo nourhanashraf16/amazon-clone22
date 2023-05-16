@@ -1,0 +1,117 @@
+.first-nav .navbar {
+  background-color: black;
+}
+
+.first-nav .navbar .navbar-brand img {
+  width: 100px;
+}
+.first-nav .navbar .navbar-toggler {
+  border-color: white;
+  border-radius: 6px;
+  border-width: 1px;
+}
+.first-nav .navbar .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke="white" stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width="2" d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e');
+}
+.first-nav .navbar .my-div {
+  display: flex;
+  align-items: end;
+}
+
+.navbar .first-line {
+  font-size: 13px;
+  color: white;
+}
+.navbar .second-line {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+.navbar .input-group {
+  width: 350px;
+}
+.navbar .input-group .dropdown-menu {
+  position: absolute;
+}
+.navbar .input-group .input-group-text {
+  border: none;
+}
+.navbar .input-group .all {
+  padding: 0;
+}
+.navbar .dropdown-menu {
+  border-radius: 0;
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+.navbar .input-group .search {
+  background-color: #febd69;
+}
+.navbar .input-group input:focus {
+  box-shadow: none;
+  border: none;
+}
+.navbar .right-nav {
+  align-items: flex-end;
+}
+.navbar .right-nav .lang-icon {
+  color: white;
+}
+.navbar .right-nav select {
+  padding: 3px 4px;
+  border: none;
+  outline: none;
+}
+.navbar .right-nav .flag-egypt {
+  width: 30px;
+  margin: 0 3px;
+}
+.navbar .right-nav a {
+  margin: 0 4px;
+}
+.navbar .right-nav .my-cart {
+  position: relative;
+}
+.navbar .right-nav .my-cart span {
+  position: absolute;
+  top: -15px;
+  right: -2px;
+  font-size: 16px;
+  color: #febd69;
+}
+.navbar .right-nav .my-cart .cart {
+  font-size: 30px;
+}
+.navbar .right-nav a,
+.navbar .my-div,
+.navbar .center-nav {
+  padding: 12px 5px;
+}
+.navbar .right-nav a:hover,
+.navbar .my-div:hover {
+  border: 1px solid white;
+}
+
+/* media querry */
+@media (max-width: 992px) {
+  .first-nav .navbar .right-nav {
+    align-items: flex-start;
+  }
+  .first-nav .navbar .input-group .all .dropdown-toggle {
+    padding: 10px;
+  }
+  .first-nav .navbar .my-div {
+    width: fit-content;
+  }
+  .first-nav .navbar .input-group {
+    width: 80%;
+  }
+  .first-nav .navbar .navbar-toggler {
+    padding: 1px 7px;
+  }
+  .first-nav .navbar .navbar-toggler .navbar-toggler-icon {
+    font-size: 17px;
+  }
+}

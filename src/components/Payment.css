@@ -1,0 +1,99 @@
+.payment {
+}
+.payment .nav-payment {
+  background-color: #dee2e6;
+  padding: 6px 0;
+}
+.payment .nav-payment h3 {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.payment .nav-payment h3 a {
+  color: black;
+}
+.payment .nav-payment h3 .items {
+  color: blueviolet;
+  padding: 0 5px;
+}
+.payment .content {
+}
+.payment .content .address-user {
+  padding: 16px 0;
+  border-bottom: 1px solid #dee2e6;
+  /* margin: 16px 0; */
+}
+.payment .content .items-user {
+  border-bottom: 1px solid #dee2e6;
+}
+.payment .content .address-user p {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.payment .content .left-sec {
+  font-weight: 800;
+  font-size: 16px;
+}
+.payment .content .items-user .left-sec {
+  padding: 30px 0 0 16px;
+}
+.payment .content .StripeElement {
+  padding: 16px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  font-size: 16px;
+  color: #555;
+  width: 100%;
+}
+.payment .content .payment-method {
+  padding-top: 16px;
+}
+.payment .content .payment-method .order-total {
+  font-weight: 600;
+  margin: 16px 0;
+}
+.payment .content .payment-method .buy-now {
+  color: black;
+  background-color: #febd69;
+  border: #febd69;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 80%;
+  padding: 8px 0;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.payment .content .payment-method .buy-now p {
+  margin-bottom: 0;
+}
+.CardField-input-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+}
+@media (max-width: 768px) {
+  iframe {
+    width: -1px !important;
+    height: 22.8px !important;
+  }
+  .payment .nav-payment h3 {
+    font-size: 18px;
+  }
+  .payment .content .payment-method .buy-now {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .payment .content .payment-method .order-total {
+    font-size: 18px;
+  }
+  .payment .content .StripeElement {
+    padding: 8px 12px;
+  }
+  .payment .content .payment-method {
+    margin-bottom: 16px;
+  }
+}
