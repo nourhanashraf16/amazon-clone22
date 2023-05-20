@@ -20,11 +20,11 @@ export const removeFromBasket = (id) => {
     payload: id,
   };
 };
-export const getTotalPrice = (basket) => {
-  return basket.reduce((acc, cur) => {
-    return (acc = acc + cur.price);
-  }, 0);
-};
+// export const getTotalPrice = (basket) => {
+//   return basket.reduce((acc, cur) => {
+//     return (acc = acc + cur.price);
+//   }, 0);
+// };
 export const deleteAll = () => {
   return {
     type: "DELETE_ALL",
