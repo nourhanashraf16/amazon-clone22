@@ -16,11 +16,11 @@ const Header2 = () => {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="second-nav">
+    <div className="second-nav shadow-lg">
       <Navbar expand="lg">
         <Container fluid>
           <Nav>
-            <NavLink to="" className="nav-link" onClick={handleShow}>
+            <NavLink to="" className="nav-link d-flex" onClick={handleShow}>
               <MenuIcon />
               All
             </NavLink>

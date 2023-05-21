@@ -1,3 +1,11 @@
+.first-nav {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 111;
+  overflow: hidden;
+}
 .first-nav .navbar {
   background-color: black;
 }
@@ -71,17 +79,17 @@
 .navbar .right-nav a {
   margin: 0 4px;
 }
-.navbar .right-nav .my-cart {
+.first-nav .container-fluid {
   position: relative;
 }
-.navbar .right-nav .my-cart span {
+.first-nav .my-cart {
   position: absolute;
-  top: -15px;
-  right: -2px;
-  font-size: 16px;
+}
+.first-nav .my-cart span {
+  font-size: 18px;
   color: #febd69;
 }
-.navbar .right-nav .my-cart .cart {
+.first-nav .my-cart .cart {
   font-size: 30px;
 }
 .navbar .right-nav a,
@@ -95,6 +103,20 @@
 }
 
 /* media querry */
+@media (min-width: 992px) {
+  .first-nav .orders {
+    margin-right: 45px !important;
+  }
+  .first-nav .my-cart {
+    right: 7px;
+    top: 33px;
+  }
+  .first-nav .my-cart span {
+    position: absolute;
+    left: 11px;
+    top: -17px;
+  }
+}
 @media (max-width: 992px) {
   .first-nav .navbar .right-nav {
     align-items: flex-start;
@@ -113,5 +135,14 @@
   }
   .first-nav .navbar .navbar-toggler .navbar-toggler-icon {
     font-size: 17px;
+  }
+  .first-nav .my-cart {
+    right: 65px;
+    top: 6px;
+  }
+  .first-nav .my-cart span {
+    position: absolute;
+    left: 17px;
+    top: -16px;
   }
 }

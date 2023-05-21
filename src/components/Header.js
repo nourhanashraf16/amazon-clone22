@@ -23,14 +23,21 @@ const Header = () => {
   const handleSignOut = () => {
     auth.signOut();
   };
-
   return (
     <div className="first-nav">
       <Navbar collapseOnSelect expand="lg">
         <Container fluid>
-          <Link to="/" className="navbar-brand">
-            <img src="img/Amazon-Logo-1024x426-1.png" alt="logo" />
-          </Link>
+          <div>
+            <Link to="/" className="navbar-brand">
+              <img src="img/Amazon-Logo-1024x426-1.png" alt="logo" />
+            </Link>
+            <NavLink to={user ? "/cart" : "/signin"} className="second-line ">
+              <div className="my-cart">
+                <ShoppingCartIcon className="cart" />
+                <span>{basket.length}</span>
+              </div>
+            </NavLink>
+          </div>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="">
@@ -93,14 +100,8 @@ const Header = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="/" className="second-line">
+              <NavLink to="/" className="second-line orders">
                 orders
-              </NavLink>
-              <NavLink to={user ? "/cart" : "/signin"} className="second-line ">
-                <div className="my-cart">
-                  <ShoppingCartIcon className="cart" />
-                  <span>{basket.length}</span>
-                </div>
               </NavLink>
             </Nav>
           </Navbar.Collapse>

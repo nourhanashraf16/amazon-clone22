@@ -11,6 +11,7 @@
   flex-direction: row;
   align-items: center;
 }
+
 /* medium screen */
 @media screen and (max-width: 992px) and (min-width: 768px) {
   .second-nav .nav-link {
@@ -30,7 +31,11 @@
     font-size: 13px;
   }
 }
-
+@media (max-width: 992px) {
+  .second-nav .my-cart {
+    display: inline;
+  }
+}
 /* side nav */
 .offcanvas-header {
   background-color: #232f3e;
