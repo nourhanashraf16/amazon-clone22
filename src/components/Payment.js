@@ -4,6 +4,7 @@ import { GlobalContext } from "../context/GlobalState";
 import "./Payment.css";
 import ProductCheckout from "./ProductCheckout";
 import { Container, Row, Col } from "react-bootstrap";
+import { getTotalPrice } from "../context/AppReducer";
 
 const Payment = () => {
   const { basket, user } = useContext(GlobalContext);
@@ -45,6 +46,18 @@ const Payment = () => {
                   />
                 );
               })}
+            </Col>
+          </Row>
+          <Row className="payment-method">
+            <Col lg={3} md={4} sm={6} className="left-sec">
+              Payment method
+            </Col>
+            <Col lg={9} md={8} sm={6}>
+              <h5 className="order-total">
+                order total : {getTotalPrice(basket)} $
+              </h5>
+
+              <button className="buy-now">Buy Now</button>
             </Col>
           </Row>
         </Container>

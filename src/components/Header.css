@@ -145,4 +145,8 @@
     left: 17px;
     top: -16px;
   }
+  .first-nav .my-cart span {
+    font-size: 15px;
+    color: #febd69;
+  }
 }

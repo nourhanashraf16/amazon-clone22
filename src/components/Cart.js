@@ -4,7 +4,7 @@ import "./Cart.css";
 import { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import ProductCheckout from "./ProductCheckout";
-// import Subtotal from "./Subtotal";
+import Subtotal from "./Subtotal";
 import { deleteAll } from "../context/AppReducer";
 const Checkout = () => {
   const { user, basket, dispatch } = useContext(GlobalContext);
@@ -59,7 +59,9 @@ const Checkout = () => {
             </div>
           </Col>
           <Col lg={3} md={4} sm={12}>
-            <div className="cart-right">{/* <Subtotal /> */}</div>
+            <div className="cart-right">
+              <Subtotal />
+            </div>
           </Col>
         </Row>
       </Container>
