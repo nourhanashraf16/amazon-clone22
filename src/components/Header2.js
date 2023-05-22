@@ -20,7 +20,11 @@ const Header2 = () => {
       <Navbar expand="lg">
         <Container fluid>
           <Nav>
-            <NavLink to="" className="nav-link d-flex" onClick={handleShow}>
+            <NavLink
+              to=""
+              className="nav-link d-flex align-items-center"
+              onClick={handleShow}
+            >
               <MenuIcon />
               All
             </NavLink>
