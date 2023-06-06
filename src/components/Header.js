@@ -15,6 +15,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { GlobalContext } from "../context/GlobalState";
 import { useContext } from "react";
 import { auth } from "../firebase";
+import Payment from "./Payment";
 const Header = () => {
   const state = useContext(GlobalContext);
   console.log(state);
@@ -100,7 +101,7 @@ const Header = () => {
                   </div>
                 </div>
               </NavLink>
-              <NavLink to="/" className="second-line orders">
+              <NavLink to="/Payment" className="second-line orders">
                 orders
               </NavLink>
             </Nav>
